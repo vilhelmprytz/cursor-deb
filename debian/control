@@ -1,0 +1,11 @@
+Package: cursor
+Version: 0.47.8
+Section: devel
+Priority: optional
+Architecture: amd64
+Depends: libfuse2
+Maintainer: Vilhelm Prytz <vilhelm@prytznet.se>
+Description: Cursor - The IDE that helps you code better
+ Cursor is an AI-first code editor that helps you code better.
+ It provides intelligent code completion, refactoring, and other
+ development features powered by AI. 

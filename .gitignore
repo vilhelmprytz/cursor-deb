@@ -1,0 +1,36 @@
+# Build directory
+build/
+
+# Debian package build files
+*.deb
+*.dsc
+*.tar.gz
+*.changes
+*.buildinfo
+*.build
+debian/.debhelper/
+debian/cursor/
+debian/debhelper-build-stamp
+debian/files
+debian/*.substvars
+debian/*.log
+
+# Downloaded assets
+*.AppImage
+*.png
+*.svg
+
+# Editor directories and files
+.vscode/
+.idea/
+*.swp
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db

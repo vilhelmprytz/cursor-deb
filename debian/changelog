@@ -1,0 +1,5 @@
+cursor (0.47.8) unstable; urgency=medium
+
+  * Initial release
+
+ -- Vilhelm Prytz <vilhelm@prytznet.se>  $(date -R)
