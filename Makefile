@@ -1,5 +1,6 @@
-CURSOR_VERSION := 0.47.8-82ef0f61c01d079d1b7e5ab04d88499d5af500e3
-CURSOR_APPIMAGE_URL := https://downloads.cursor.com/production/client/linux/x64/appimage/Cursor-$(CURSOR_VERSION).deb.glibc2.25-x86_64.AppImage
+CURSOR_HASH := b6fb41b5f36bda05cab7109606e7404a65d1ff32
+CURSOR_VERSION := 0.47.9
+CURSOR_APPIMAGE_URL := https://downloads.cursor.com/production/${CURSOR_HASH}/linux/x64/Cursor-${CURSOR_VERSION}-x86_64.AppImage
 CURSOR_ICON_URL := https://www.cursor.com/favicon.svg
 
 .PHONY: all clean

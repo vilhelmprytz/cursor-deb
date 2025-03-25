@@ -1,5 +1,11 @@
+cursor (0.47.9) unstable; urgency=medium
+
+  * Bump to 0.47.9
+
+ -- Vilhelm Prytz <vilhelm@prytznet.se>  Tue, 25 Mar 2025 10:09:47 +0100
+
 cursor (0.47.8) unstable; urgency=medium
 
   * Initial release
 
- -- Vilhelm Prytz <vilhelm@prytznet.se>  $(date -R)
+ -- Vilhelm Prytz <vilhelm@prytznet.se>  Tue, 20 Mar 2025 10:09:47 +0100
