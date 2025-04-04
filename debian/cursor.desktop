@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Cursor
-Exec=/usr/share/cursor/cursor.AppImage
+Exec=/usr/bin/cursor
 Icon=/usr/share/icons/hicolor/256x256/apps/cursor.png
 Type=Application
 Categories=Development; 

@@ -17,6 +17,7 @@ build/.assets-downloaded:
 	mkdir -p build/usr/share/icons/hicolor/256x256/apps
 	mkdir -p build/usr/share/cursor
 	mkdir -p build/usr/share/doc/cursor
+	mkdir -p build/etc/default
 
 	# Download AppImage
 	wget -O build/usr/share/cursor/cursor.AppImage $(CURSOR_APPIMAGE_URL)
@@ -28,8 +29,12 @@ build/.assets-downloaded:
 	# Copy desktop entry
 	cp debian/cursor.desktop build/usr/share/applications/cursor.desktop
 
-	# Create symlink for cursor command
-	ln -sf /usr/share/cursor/cursor.AppImage build/usr/bin/cursor
+	# Copy wrapper script for cursor command
+	cp debian/cursor-wrapper build/usr/bin/cursor
+	chmod +x build/usr/bin/cursor
+
+	# Copy default configuration file template
+	cp debian/cursor-default build/etc/default/cursor
 
 	# Copy control file
 	cp debian/control build/DEBIAN/control

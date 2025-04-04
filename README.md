@@ -40,6 +40,25 @@ sudo apt-get install -f  # Install any missing dependencies
 - Adds the `cursor` command to your PATH (e.g., `cursor .` to open current directory)
 - Properly integrates with the system's application menu
 - Requires libfuse2 for AppImage support
+- Supports custom launch options via `/etc/default/cursor` configuration file
+
+## Configuration
+
+The package supports reading custom launch options from `/etc/default/cursor`. 
+To configure Cursor with specific command line parameters:
+
+1. Edit the configuration file:
+   ```bash
+   sudo nano /etc/default/cursor
+   ```
+
+2. Add your custom options by setting the `CURSOR_OPTS` variable:
+   ```bash
+   CURSOR_OPTS="--your-option-here"
+   ```
+
+Any options specified in this file will be applied when launching Cursor from the desktop 
+entry or from the command line.
 
 ## Package Structure
 
@@ -47,4 +66,5 @@ The package installs the following files:
 - `/usr/share/cursor/cursor.AppImage` - The main application
 - `/usr/share/icons/hicolor/256x256/apps/cursor.png` - Application icon
 - `/usr/share/applications/cursor.desktop` - Desktop entry
-- `/usr/bin/cursor` - Command-line launcher (symlink)
+- `/usr/bin/cursor` - Command-line launcher (wrapper script)
+- `/etc/default/cursor` - Configuration file for custom options

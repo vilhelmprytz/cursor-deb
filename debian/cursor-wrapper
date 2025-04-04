@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# Default options
+CURSOR_OPTS=""
+
+# Read options from system config if it exists
+if [ -f /etc/default/cursor ]; then
+    source /etc/default/cursor
+fi
+
+# Execute cursor AppImage with options
+exec /usr/share/cursor/cursor.AppImage $CURSOR_OPTS "$@" 
