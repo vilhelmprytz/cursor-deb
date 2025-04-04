@@ -16,6 +16,7 @@ build/.assets-downloaded:
 	mkdir -p build/usr/share/applications
 	mkdir -p build/usr/share/icons/hicolor/256x256/apps
 	mkdir -p build/usr/share/cursor
+	mkdir -p build/usr/share/doc/cursor
 
 	# Download AppImage
 	wget -O build/usr/share/cursor/cursor.AppImage $(CURSOR_APPIMAGE_URL)
@@ -32,6 +33,9 @@ build/.assets-downloaded:
 
 	# Copy control file
 	cp debian/control build/DEBIAN/control
+
+	# Copy and compress changelog file
+	gzip -9c debian/changelog > build/usr/share/doc/cursor/changelog.Debian.gz
 
 	touch build/.assets-downloaded
 
