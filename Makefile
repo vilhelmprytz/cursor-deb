@@ -1,5 +1,5 @@
-CURSOR_HASH := fd861c8a80c0f9e4e35294b1915ee8a7b29ae858
-CURSOR_VERSION := 0.49.5
+CURSOR_HASH := 0781e811de386a0c5bcb07ceb259df8ff8246a52
+CURSOR_VERSION := 0.49.6
 CURSOR_APPIMAGE_URL := https://downloads.cursor.com/production/${CURSOR_HASH}/linux/x64/Cursor-${CURSOR_VERSION}-x86_64.AppImage
 CURSOR_ICON_URL := https://www.cursor.com/favicon.svg
 
