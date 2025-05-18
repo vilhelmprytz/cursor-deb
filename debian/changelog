@@ -1,3 +1,9 @@
+cursor (0.50.5) stable; urgency=medium
+
+  * Bump to 0.50.5
+
+ -- Vilhelm Prytz <vilhelm@prytznet.se>  Sun, 18 May 2025 21:55:16 +0200
+
 cursor (0.49.6) stable; urgency=medium
 
   * Bump to 0.49.6
