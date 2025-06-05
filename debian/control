@@ -1,5 +1,5 @@
 Package: cursor
-Version: 0.50.5
+Version: 1.0.0
 Section: devel
 Priority: optional
 Architecture: amd64
