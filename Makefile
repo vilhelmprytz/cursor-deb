@@ -39,6 +39,9 @@ build/.assets-downloaded:
 	# Copy control file
 	cp debian/control build/DEBIAN/control
 
+	# Copy conffiles
+	cp debian/conffiles build/DEBIAN/conffiles
+
 	# Copy and compress changelog file
 	gzip -9c debian/changelog > build/usr/share/doc/cursor/changelog.Debian.gz
 
