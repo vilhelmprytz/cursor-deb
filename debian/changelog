@@ -1,3 +1,9 @@
+cursor (1.1.7) stable; urgency=medium
+
+  * Bump to 1.1.7
+
+ -- Vilhelm Prytz <vilhelm@prytznet.se>  Tue, 01 Jul 2025 21:54:28 +0200
+
 cursor (1.1.6) stable; urgency=medium
 
   * Bump to 1.1.6
